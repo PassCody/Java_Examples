@@ -11,22 +11,27 @@ public class SimpleFrame extends Frame{
 	JFrame f1 = new JFrame();
 	
 	/* Button Deklaration */
-	JButton b1 = new JButton("Button");
+	JButton b1 = new JButton();
 	
 	/* Field Deklaration */
 	JTextField tf1 = new JTextField();
+	
 	public static void main(String args[]) {
 		SimpleFrame konst = new SimpleFrame();
 	}
 	
 	public SimpleFrame() {
 		f1.setTitle("Ich bin ein Frame");
-		f1.setSize(500,800);
+		f1.setSize(250,400);
 		f1.setLocation(50,50);
 		f1.setVisible(true);
-		b1.setLocation(150,250);
-		f1.add(new JLabel("Beispiel Button: "));
+		f1.add(tf1);
 		f1.add(b1);
-		b1.setSize(120,25);
+		
+		tf1.setLocation(150,150);
+		tf1.setText("I'm a Text Field.");
+		
+		b1.setLocation(150,250);
+		b1.setText("I'm a Button");
 	}
 }
