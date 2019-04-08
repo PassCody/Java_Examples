@@ -1,3 +1,7 @@
+/* Author and Coder: PassCody*/
+
+
+
 package de.frame.cli.MyFrame;
 
 import java.awt.*;
