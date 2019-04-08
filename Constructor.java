@@ -10,7 +10,7 @@ import java.awt.*;
 @SuppressWarnings("unused")
 
 /* BEGIN OF THE PROGRAM */
-public class Exercises_II {
+public class Constructor {
 	
 	public static void main(String[] args) {
 
@@ -20,15 +20,15 @@ public class Exercises_II {
 
 		String param2 = "Test";
 
-		Exercises_II e1 = new Exercises_II();
+		Constructor e1 = new Constructor();
 
-		Exercises_II e2 = new Exercises_II(param1, param2);
+		Constructor e2 = new Constructor(param1, param2);
 
 		Array[0] = param1;
 
 		Array[1] = param1 + param1;
 
-		Exercises_II e3 = new Exercises_II(Array[0], Array[1]);
+		Constructor e3 = new Constructor(Array[0], Array[1]);
 	}
 	
 	public Exercises_II() {
