@@ -1,5 +1,4 @@
-/* Author and Coder: Christian Liebel*/
-	  /* Class Member: E1FI3 */
+/* Author and Coder: PassCody*/
 
 
 
