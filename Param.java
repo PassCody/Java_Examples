@@ -10,7 +10,7 @@ import java.awt.*;
 @SuppressWarnings("unused")
 
 /* BEGIN OF THE PROGRAM */
-public class Exercises_I {
+public class Param {
 	
 	/* DEKLARATION SCANNER */
 	Scanner sc = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Exercises_I {
 		Exercises_I e1 = new Exercises_I();
 	}
 	
-	public Exercises_I() {
+	public Param() {
 		double a_side = 0, b_side = 0, h_side = 0;
 		
 		/* USER INPUTS */
