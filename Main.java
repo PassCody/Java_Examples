@@ -1,13 +1,12 @@
-public class Test {
-	
+class Main {
 	String[] word = new String[7];
 	
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		Test kons = new Test();
+		Main kons = new Main();
 	}
 	
-	public Test() {
+	public Main() {
 		init();
 	}
 	
@@ -25,31 +24,31 @@ public class Test {
 	public void first_out_put() {
 		spacer();
 		sleep();
-		System.out.println(word[0] = "You");
+		word[0] = "You";
 	}
 	
 	public void secound_out_put() {
-		System.out.println(word[1] = "Are");
+		word[1] = "Are";
 	}
 	
 	public void third_out_put() {
-		System.out.println(word[2] = "My");
+		word[2] = "My";
 	}
 	
 	public void fourth_out_put() {
-		System.out.println(word[3] = "Semicolon(;)");
+		word[3] = "Semicolon(;)";
 	}
 	
 	public void fifth_out_put() {
-		System.out.println(word[4] = "To");
+		word[4] = "To";
 	}
 	
 	public void sixth_out_put() {
-		System.out.println(word[5] = "My");
+		word[5] = "My";
 	}
 	
 	public void seventh_out_put() {
-		System.out.println(word[6] = "Statement!");
+		word[6] = "Statement!";
 	}
 
 	public void load_more() {
