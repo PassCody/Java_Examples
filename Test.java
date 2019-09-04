@@ -1,35 +1,19 @@
-import java.util.*;
-import java.io.*;
-import java.awt.*;
+package ForYou;
 
-@SuppressWarnings("unused")
-public class YouAreMy {
-
+public class ForYou {
+	
+	String[] word = new String[7];
+	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		YouAreMy kons = new YouAreMy();
+		ForYou kons = new ForYou();
 	}
 	
-	public YouAreMy() {
+	public ForYou() {
 		init();
 	}
 	
 	public void init() {
-		for (int i = 0; i != 12; i++) {
-			System.out.println("\n");
-		}
-		try {
-			System.out.print("Loading output: ");
-			for (int timer = 0; timer != 40; timer++) {
-				Thread.sleep(50);
-			System.out.print("#");
-			}
-		}
-		catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
-		for (int i = 0; i != 12; i++) {
-			System.out.println("\n");
-		}
 		first_out_put();
 		secound_out_put();
 		third_out_put();
@@ -41,170 +25,68 @@ public class YouAreMy {
 	}
 	
 	public void first_out_put() {
-		System.out.println("You");
-		try {
-			System.out.print("Loading more output: ");
-			for (int timer = 0; timer != 40; timer++) {
-				Thread.sleep(50);
-			System.out.print("#");
-			}
-		}
-		catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
-		for (int i = 0; i != 12; i++) {
-			System.out.println("\n");
-		}
+		spacer();
+		sleep();
+		System.out.println(word[0] = "You");
 	}
 	
 	public void secound_out_put() {
-		System.out.println("Are");
-		try {
-			System.out.print("Loading more output: ");
-			for (int timer = 0; timer != 40; timer++) {
-				Thread.sleep(50);
-			System.out.print("#");
-			}
-		}
-		catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
-		for (int i = 0; i != 12; i++) {
-			System.out.println("\n");
-		}
+		System.out.println(word[1] = "Are");
 	}
 	
 	public void third_out_put() {
-		System.out.println("My");
-		try {
-			System.out.print("Loading more output: ");
-			for (int timer = 0; timer != 40; timer++) {
-				Thread.sleep(50);
-			System.out.print("#");
-			}
-		}
-		catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
-		for (int i = 0; i != 12; i++) {
-			System.out.println("\n");
-		}
+		System.out.println(word[2] = "My");
 	}
 	
 	public void fourth_out_put() {
-		System.out.println("semicolon(;)");
-		try {
-			System.out.print("Loading more output: ");
-			for (int timer = 0; timer != 40; timer++) {
-				Thread.sleep(50);
-			System.out.print("#");
-			}
-		}
-		catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
-		for (int i = 0; i != 12; i++) {
-			System.out.println("\n");
-		}
+		System.out.println(word[3] = "Semicolon(;)");
 	}
 	
 	public void fifth_out_put() {
-		System.out.println("To");
-		try {
-			System.out.print("Loading more output: ");
-			for (int timer = 0; timer != 40; timer++) {
-				Thread.sleep(50);
-			System.out.print("#");
-			}
-		}
-		catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
-		for (int i = 0; i != 12; i++) {
-			System.out.println("\n");
-		}
+		System.out.println(word[4] = "To");
 	}
 	
 	public void sixth_out_put() {
-		System.out.println("My");
-		try {
-			System.out.print("Loading more output: ");
-			for (int timer = 0; timer != 40; timer++) {
-				Thread.sleep(50);
-			System.out.print("#");
-			}
+		System.out.println(word[5] = "My");
+	}
+	
+	public void seventh_out_put() {
+		System.out.println(word[6] = "Statement!");
+	}
+
+	public void load_more() {
+		spacer();
+		sleep();
+		for (int i = 0; i != 7; i++) {
+			System.out.print(word[i] + " ");
 		}
-		catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
+		System.out.println("");
+		System.out.println("♥ I miss you... ♥");
+		system_exit();
+	}
+	
+	public void spacer() {
 		for (int i = 0; i != 12; i++) {
 			System.out.println("\n");
 		}
 	}
 	
-	public void seventh_out_put() {
-		System.out.println("Statement!");
+	public void sleep() {
 		try {
-			System.out.print("Loading more output: ");
+			System.out.print("Loading output: ");
 			for (int timer = 0; timer != 40; timer++) {
 				Thread.sleep(50);
 			System.out.print("#");
 			}
+			System.out.println("");
 		}
 		catch(InterruptedException ex) {
 		    Thread.currentThread().interrupt();
-		}
-		for (int i = 0; i != 12; i++) {
-			System.out.println("\n");
-		}
-	}
-
-	public void load_more() {
-		System.out.println("Load more?");
-		System.out.println("Enter \"Yes\" for Yes.");
-		System.out.println("Enter \"anything else\" for No (system ends).");
-		Scanner sc = new Scanner(System.in);
-		String checker;
-		checker = sc.nextLine();
-		sc.close();
-		if (checker == "1") {
-			try {
-				System.out.print("Loading output: ");
-				for (int timer = 0; timer != 40; timer++) {
-					Thread.sleep(50);
-				System.out.print("#");
-				}
-			}
-			catch(InterruptedException ex) {
-			    Thread.currentThread().interrupt();
-			}
-			for (int i = 0; i != 12; i++) {
-				System.out.println("\n");
-			}
-			System.out.println("You are my semicolon(;) to my statement.");
-			System.out.println("♥ I miss you... ♥");
-			system_exit();
-		}
-		else {
-			try {
-				System.out.print("Loading system exit: ");
-				for (int timer = 0; timer != 40; timer++) {
-					Thread.sleep(50);
-				System.out.print("#");
-				}
-			}
-			catch(InterruptedException ex) {
-			    Thread.currentThread().interrupt();
-			}
-			for (int i = 0; i != 12; i++) {
-				System.out.println("\n");
-			}
-			system_exit();
 		}
 	}
 	
 	public void system_exit() {
-		System.out.println("See you ;)");
+		System.out.println("See you as soon as possible ;)");
 		System.exit(0);
 	}
 }
