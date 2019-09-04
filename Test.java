@@ -1,15 +1,15 @@
 package ForYou;
 
-public class ForYou {
+public class Test {
 	
 	String[] word = new String[7];
 	
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		ForYou kons = new ForYou();
+		Test kons = new Test();
 	}
 	
-	public ForYou() {
+	public Test() {
 		init();
 	}
 	
