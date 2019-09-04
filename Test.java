@@ -1,5 +1,3 @@
-package ForYou;
-
 public class Test {
 	
 	String[] word = new String[7];
