@@ -4,19 +4,19 @@ public class SetResault {
 	
 	private double resault = 0;
 
-	public SetResault(double a, double b, int x) {
+	public SetResault(double[] myarray, int x) {
 		switch (x){
 			case 1:
-				resault = set_resault_addition(a, b);
+				resault = set_resault_addition(myarray[0], myarray[1]);
 			break;
 			case 2:
-				resault = set_resault_subtraktion(a, b);
+				resault = set_resault_subtraktion(myarray[0], myarray[1]);
 			break;
 			case 3:
-				resault = set_resault_multiplikation(a, b);
+				resault = set_resault_multiplikation(myarray[0], myarray[1]);
 			break;
 			case 4:
-				resault = set_resault_divisdieren(a, b);
+				resault = set_resault_divisdieren(myarray[0], myarray[1]);
 			break;
 		}
 		
