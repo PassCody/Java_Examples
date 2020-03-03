@@ -8,14 +8,14 @@ public class setNumbers {
 	
 	public setNumbers() {
 		Scanner sc = new Scanner(System.in);
-		setA(this.a, sc);
-		setB(this.b, sc);
+		setA(sc);
+		setB(sc);
 		getNumbers(sc);
 	}
 	
 	public void getNumbers(Scanner sc) {
 		System.out.println("Sie haben die Zahlen " + (getA()) + " und " + (getB()) + " Eingegeben.");
-		System.out.println("Alles Erledigt? (J für Ja, N für Nein)");
+		System.out.println("Alles Erledigt? (J fÃ¼r Ja, N fÃ¼r Nein)");
 		char y_n = sc.next().charAt(0);
 		if (y_n == 'J' || y_n == 'j') {
 			new Menue(sc, getA(), getB());
@@ -29,19 +29,17 @@ public class setNumbers {
 		return a;
 	}
 
-	public void setA(double a, Scanner sc) {
+	public void setA(Scanner sc) {
 		System.out.print("Bitte geben Sie eine Zahl ein: ");
-		a = sc.nextDouble();
-		this.a = a;
+		this.a = sc.nextDouble();
 	}
 
 	public double getB() {
 		return b;
 	}
 
-	public void setB(double b, Scanner sc) {
+	public void setB(Scanner sc) {
 		System.out.print("Bitte geben Sie eine Zahl ein: ");
-		b = sc.nextDouble();
-		this.b = b;
+		this.b = sc.nextDouble();
 	}
 }
