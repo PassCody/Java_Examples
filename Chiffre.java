@@ -65,7 +65,7 @@ public class Chiffre {
 	
 	private void getDecoded(char[] decoded) {
 		for (int i = 0; i < decoded.length; i++) {
-			if (((int)decoded[i]) == 65452 || ((int)decoded[i]) == 65452) {
+			if (((int)decoded[i]) == 65452 || ((int)decoded[i]) == 172) {
 				System.out.print("€");
 			}
 			else {
@@ -75,16 +75,19 @@ public class Chiffre {
 	}
 
 	private void getEncoded(char[] encoded) {
+		System.out.println("Encoded: ");
 		System.out.println(encoded);
 		System.out.println();
 	}
 
 	private void getKey(char[] key) {
+		System.out.println("Key: ");
 		System.out.println(key);
 		System.out.println();
 	}
 
 	private void getInput(char[] input) {
+		System.out.println("Input: ");
 		System.out.println(input);
 		System.out.println();
 	}
